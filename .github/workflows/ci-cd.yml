@@ -49,3 +49,5 @@ jobs:
           path: build/app/outputs/flutter-apk/app-debug.apk
           if-no-files-found: error
           retention-days: 7
+      - name: Run unit and widget tests
+        run: flutter test
